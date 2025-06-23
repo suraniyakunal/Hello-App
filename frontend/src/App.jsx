@@ -1,20 +1,22 @@
 import './App.css'
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import MainLayout from './components/MainLayout.jsx'
+import Home from './pages/Home.jsx'
+import Chat from './pages/Chat.jsx'
 
 
 function App() {
 
   return (
-    <div className='min-h-screen flex flex-col'>
-      <Navbar />
-      <main className='p-6'>
-        Welcome to the chat app
-      </main>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />} >
+          <Route path='/' element={<Home />} />
+          <Route path='/chat' element={<Chat />} />
+        </Route>
 
-
-      <Footer />
-    </div>
+      </Routes>
+    </BrowserRouter>
 
   )
 }
