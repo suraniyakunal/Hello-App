@@ -4,6 +4,7 @@ import MainLayout from './components/MainLayout.jsx'
 import Home from './pages/Home.jsx'
 import Chat from './pages/Chat.jsx'
 import Register from './pages/Register.jsx'
+import Login from './pages/Login.jsx'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/chat' element={<Chat />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/login' element={<Login />} />
         </Route>
 
       </Routes>
