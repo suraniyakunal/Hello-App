@@ -6,13 +6,15 @@ import { Outlet } from 'react-router-dom'
 
 export default function MainLayout() {
   return (
-    <div id="main">
+    <div id="main" className='bg-black w-[100%] relative'>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow">
+        <main className="">
           <Outlet /> {/* This renders the current route’s page */}
         </main>
-        <Footer />
+        <div id="footer" className='absolute align-bottom justify-center'>
+          <Footer />
+        </div>
       </div>
 
     </div>
