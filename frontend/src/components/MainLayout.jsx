@@ -6,8 +6,8 @@ import { Outlet } from 'react-router-dom'
 
 export default function MainLayout() {
   return (
-    <div id="main" className='bg-black relative min-h-screen'>
-      <div className="flex flex-col">
+    <div id="main" className='bg-black relative min-h-screen w-full'>
+      <div className="flex flex-col relative">
         <div id="nav">
           <Navbar />
         </div>
@@ -15,9 +15,9 @@ export default function MainLayout() {
         <main className="">
           <Outlet /> {/* This renders the current route’s page */}
         </main>
-        {/* <div id="footer" className='absolute align-bottom justify-center'> */}
-        {/*   <Footer /> */}
-        {/* </div> */}
+        <div id="footer" className='fixed bottom-0 text-center w-full justify-center'>
+          <Footer />
+        </div>
       </div>
 
     </div>
