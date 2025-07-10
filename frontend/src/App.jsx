@@ -2,7 +2,7 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MainLayout from './components/MainLayout.jsx'
 import Home from './pages/Home.jsx'
-import Chat from './pages/Chat.jsx'
+import Chat from './components/ChatBox.jsx'
 import Register from './pages/Register.jsx'
 import Login from './pages/Login.jsx'
 

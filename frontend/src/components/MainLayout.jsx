@@ -6,8 +6,8 @@ import { Outlet } from 'react-router-dom'
 
 export default function MainLayout() {
   return (
-    <div id="main" className='bg-black relative min-h-screen w-full'>
-      <div className="flex flex-col relative">
+    <div id="main" className='bg-green-400 min-h-screen w-full'>
+      <div className="flex flex-col">
         <div id="nav">
           <Navbar />
         </div>

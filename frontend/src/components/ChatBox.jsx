@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default function Chat() {
+export default function ChatBox() {
 
   const handleSendMessage = (e) => {
 
   }
 
   return (
-    <div className="flex h-screen bg-bla">
+    <div className="flex h-screen bg-green-400">
       {/* Contacts Sidebar */}
       <div className="w-1/4 border-r p-4 overflow-y-auto">
         {/* Contact list goes here */}
